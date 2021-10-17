@@ -5,8 +5,8 @@ mkdir ~/tools
 cd ~/tools 
 git clone https://github.com/obheda12/GitDorker.git
 apt install sublist3r
-assetfinder
-amass
+apt install assetfinder
+apt install amass
 go get -u github.com/gwen001/github-subdomains
 git clone https://github.com/m8r0wn/subscraper
 cd subscraper
