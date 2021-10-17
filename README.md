@@ -31,7 +31,7 @@ Run tools such as:
 git clone https://github.com/Iyaad-luqman/init-recon.git  <br />
 cd init-recon <br />
 sudo chmod +x install.sh <br />
-sudo ./install.sh. <br />
+sudo ./install.sh <br />
 
 # Usage: 
 init-recon -d domain -e exclude-domain -t github-token
