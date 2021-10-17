@@ -15,23 +15,23 @@ Run tools such as:
 - nmap
 <br />
 <br />
--Gathers all subdomains and check which are alive using httpx. 
--search for github-enspoints in Github [token required]. 
--fetch data from waybackurls. 
--sorts it down on the basis of status codes. 
--takes screenshots of all the required Urls and subdomains using aquatone. 
+- Gathers all subdomains and check which are alive using httpx. 
+- search for github-enspoints in Github [token required]. 
+- fetch data from waybackurls. 
+- sorts it down on the basis of status codes. 
+- takes screenshots of all the required Urls and subdomains using aquatone. 
 <br />
--Perform Github-Dorks. 
--Perform Shodan-Dorks. 
--Perform Google-Dorks
+- Perform Github-Dorks. 
+- Perform Shodan-Dorks. 
+- Perform Google-Dorks
 <br />
--Finally puts all the results into a webpage for easy access.
-<br />
+- Finally puts all the results into a webpage for easy access.
+
 # Installation:
-git clone https://github.com/Iyaad-luqman/init-recon.git 
+git clone https://github.com/Iyaad-luqman/init-recon.git  <br />
 cd init-recon <br />
 sudo chmod +x install.sh <br />
-sudo ./install.sh
+sudo ./install.sh. <br />
 
 # Usage: 
 init-recon -d domain -e exclude-domain -t github-token
