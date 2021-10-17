@@ -435,7 +435,6 @@ printf $red
 echo ""
 echo "" 
 
-echo  Tip: Try running xsser on Intersting URLs .. 
 printf $reset
 
 echo "************************************************************"
@@ -443,29 +442,4 @@ printf $cyan
 echo "    init-recon Finished at $(date +"%r")"
 printf $reset
 echo "************************************************************"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
