@@ -1,6 +1,6 @@
 cp init-recon.sh /bin/init-recon
 chmod +x /bin/init-recon
-
+go get github.com/tomnomnom/waybackurls
 mkdir ~/tools
 cd ~/tools 
 git clone https://github.com/obheda12/GitDorker.git
