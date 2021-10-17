@@ -15,15 +15,15 @@ Run tools such as:
 - nmap
 <br />
 <br />
-- Gathers all subdomains and check which are alive using httpx. 
-- search for github-enspoints in Github [token required]. 
-- fetch data from waybackurls. 
-- sorts it down on the basis of status codes. 
-- takes screenshots of all the required Urls and subdomains using aquatone. 
+- Gathers all subdomains and check which are alive using httpx. <br />
+- search for github-enspoints in Github [token required]. <br />
+- fetch data from waybackurls. <br />
+- sorts it down on the basis of status codes. <br />
+- takes screenshots of all the required Urls and subdomains using aquatone. <br />
 <br />
-- Perform Github-Dorks. 
-- Perform Shodan-Dorks. 
-- Perform Google-Dorks
+- Perform Github-Dorks. <br />
+- Perform Shodan-Dorks. <br />
+- Perform Google-Dorks <br />
 <br />
 - Finally puts all the results into a webpage for easy access.
 
