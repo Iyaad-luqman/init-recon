@@ -1,12 +1,13 @@
 #!/bin/bash
 
-# Usage: -e: exclude for " -e 'shop|blog' "
+# Usage: -e: exclude for " -e 'shop|blog' -g github_token  "
 
-while getopts "d:e:" flag
+while getopts "d:e:g:" flag
 do
     case "${flag}" in
         d) domain=${OPTARG};;
         e) exclude=${OPTARG};;
+	g) token=${OPTARG};;
     esac
 done
 
@@ -53,7 +54,7 @@ cd $domain
 echo Starting GitDorker at $(date +"%r")
 echo ""
 
-python3 ~/tools/GitDorker/GitDorker.py -t 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 -org hubspot -d ~/tools/GitDorker/Dorks/medium_dorks.txt | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g"> logs/gitdorker.txt
+python3 ~/tools/GitDorker/GitDorker.py -t $token -org hubspot -d ~/tools/GitDorker/Dorks/medium_dorks.txt | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g"> logs/gitdorker.txt
 cat logs/gitdorker.txt| grep "[+]"| grep -v "#" > gitdorker.txt 
 
 
@@ -76,7 +77,7 @@ amass enum -passive -d $domain  -o subdomain/amass.txt  >> logs/subdomains.txt
 echo Starting github-subdomains at $(date +"%r") 
 echo ""
 
-github-subdomains -d $domain -o subdomain/github.txt -t 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 >> logs/subdomain.txt
+github-subdomains -d $domain -o subdomain/github.txt -t $token >> logs/subdomain.txt
 
 echo Starting subscraper at $(date +"%r") 
 echo ""
@@ -218,7 +219,7 @@ cat httpx/wayback-alive.txt | grep -v '403\|301\|200' > wayback/other.txt
 echo Starting github_endpoints at $(date +"%r") 
 echo ""
 
-python3 ~/tools/GIT/github-endpoints.py -t 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 --extend -r -a -d $domain | grep $domain | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g" > github-endpoints.txt 
+python3 ~/tools/GIT/github-endpoints.py -t $token --extend -r -a -d $domain | grep $domain | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g" > github-endpoints.txt 
 
 httpx  -l github-endpoints.txt -probe -title -silent -status-code | grep -v   '404\|FAILED' > github-endpoints-alive.txt
 
