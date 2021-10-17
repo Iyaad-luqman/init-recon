@@ -39,4 +39,6 @@ ex:
 If there is no subdomains to exclude, then use -e and leave it blank. same applies for github token 
 
 # Screenshot: 
-  ![Screen Shot 2021-10-17 at 7 10 42 PM](https://user-images.githubusercontent.com/86549899/137629779-48b2fbcd-72fc-4211-8eb4-cd59427b85ee.png)
+![Screen Shot 2021-10-17 at 7 14 05 PM](https://user-images.githubusercontent.com/86549899/137629914-c97eb65c-7a5f-4b2c-88ac-049b1810edfb.png)
+
+  
