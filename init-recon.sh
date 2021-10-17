@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Usage: -e: exclude for " -e 'shop|blog' -g github_token  "
+# Usage: -e: exclude for " -e 'shop|blog' -g github_token
 
 while getopts "d:e:g:" flag
 do
