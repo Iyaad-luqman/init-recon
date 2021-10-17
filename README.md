@@ -3,28 +3,30 @@ Recon script that checks for subdomains, ping them to check if they are alive, c
 
 # Features:
 Run tools such as:
- sublist3r
- assetfinder
- amass
- github-subdomains
- subscraper
- subfinder
- subjack
- SubOver
- subzy
- nmap
-Gathers all subdomains and check which are alive using httpx
-search for github-enspoints in Github [token required]
-fetch data from waybackurls
-sorts it down on the basis of status codes
-takes screenshots of all the required Urls and subdomains using aquatone
-
-Perform Github-Dorks
-Perform Shodan-Dorks
+-  sublist3r
+- assetfinder
+- amass
+- github-subdomains
+- subscraper
+- subfinder
+- subjack
+- SubOver
+- subzy
+- nmap
+<br />
+<br />
+Gathers all subdomains and check which are alive using httpx. 
+search for github-enspoints in Github [token required]. 
+fetch data from waybackurls. 
+sorts it down on the basis of status codes. 
+takes screenshots of all the required Urls and subdomains using aquatone. 
+<br />
+Perform Github-Dorks. 
+Perform Shodan-Dorks. 
 Perform Google-Dorks
-
+<br />
 Finally puts all the results into a webpage for easy access.
-
+<br />
 # Installation:
 git clone https://github.com/Iyaad-luqman/init-recon.git 
 cd init-recon
